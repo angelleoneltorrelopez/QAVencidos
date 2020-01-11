@@ -25,7 +25,7 @@ public class MetodosGenerales {
 
     public void closeDriver(WebDriver driver) {
         driver.close();
-        driver.quit();
+       // driver.quit();
     }
 
     public void step(String message) {

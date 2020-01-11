@@ -1,7 +1,7 @@
 package Auxiliar;
 
 import org.testng.annotations.Test;
-import procesos.asistencias.ProcesoFarmacia;
+import procesos.farmacia.ProcesoFarmacia;
 
 public class PruebaCorreo extends TestBase {
 

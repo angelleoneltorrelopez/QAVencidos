@@ -9,12 +9,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import java.util.HashMap;
 import java.util.Map;
 
-;
 
 public class Drivers {
+    public static String directorioDescargas;
 
     public static WebDriver locaLinuxFirefox(){
         System.setProperty("webdriver.gecko.driver", "Drivers/Linux/Firefox/geckodriver");
+        directorioDescargas = System.getProperty("user.dir")+"/downloads/";
         FirefoxOptions capabilities = new FirefoxOptions();
         capabilities.setCapability("marionette", true);
         FirefoxDriver driver = new FirefoxDriver(capabilities);
