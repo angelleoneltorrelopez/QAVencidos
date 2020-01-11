@@ -17,7 +17,7 @@ public class CrearCasa extends MetodosGenerales {
     WebDriver driver;
     WebDriverWait wait;
 
-    @FindBy(xpath = "//div[contains(text(),'Crear Casa')]")
+    @FindBy(xpath = "//div[@class = 'v-dialog__activator']/button")
     WebElement botonCrearCasa;
 
     @FindBy(name = "descripcion")
@@ -26,9 +26,12 @@ public class CrearCasa extends MetodosGenerales {
     @FindBy(xpath = "(//div[@class='v-select-list v-card theme--light']/div[@role = 'list'])[2]")
     WebElement selectProveedor;
 
+    @FindBy (xpath = "//label[contains(text(),'Buscar')]/following::input[@id]")
+    WebElement inputSearch;
+
     public void clickBotonCrearCasa(){
-        esperar(1000);
-        click(botonCrearCasa,driver,wait);
+        botonCrearCasa.click();
+       // click(botonCrearCasa,driver,wait);
     }
 
     public void ingresarDescripcion(String texto){
@@ -40,10 +43,15 @@ public class CrearCasa extends MetodosGenerales {
         seleccionarOpcionPorTexto(selectProveedor,opcion,driver,wait);
     }
 
+    public void escribirBusqueda(String texto){
+       // ingresarTexto(inputSearch,texto, driver,wait);
+        inputSearch.sendKeys(texto);
+    }
+
     public CrearCasa(WebDriver driver){
         this.driver = driver;
-        wait = new WebDriverWait(this.driver, 10);
-        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(this.driver, 5);
+        wait = new WebDriverWait(this.driver, 200);
+        AjaxElementLocatorFactory factory = new AjaxElementLocatorFactory(this.driver, 10);
         PageFactory.initElements(factory, this);
     }
 }

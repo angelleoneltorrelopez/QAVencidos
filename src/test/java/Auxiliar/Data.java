@@ -9,6 +9,9 @@ public class Data {
         /* FARMACIA */
         public final static String URL_FARMACIA = "http://localhost/";
 
+        /* VENCIDOS */
+        public final static String URL_VENCIOS = "http://localhost/vencidos";
+
         /*IMPRESORAS 3D*/
         public final static String URL_IMPRESORAS_3D = "http://beta.akademeia.ufm.edu/cotizacionbeta/public";
 
