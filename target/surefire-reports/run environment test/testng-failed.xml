@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [run environment test]">
+  <test name="vencidos(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="Test.Vencidos.Casas.valicarCreacionCasa">
+        <methods>
+          <include name="close"/>
+          <include name="crearCasa" invocation-numbers="0"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.Vencidos.Casas.valicarCreacionCasa -->
+    </classes>
+  </test> <!-- vencidos(failed) -->
+</suite> <!-- Failed suite [run environment test] -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="run environment test" duration-ms="76043" started-at="2020-01-14T03:17:27Z" finished-at="2020-01-14T03:18:43Z">
+    <groups>
+    </groups>
+    <test name="vencidos" duration-ms="76043" started-at="2020-01-14T03:17:27Z" finished-at="2020-01-14T03:18:43Z">
+      <class name="Test.Vencidos.Casas.valicarCreacionCasa">
+        <test-method status="PASS" signature="init([Ljava.lang.Object;)[pri:0, instance:Test.Vencidos.Casas.valicarCreacionCasa@6fb554cc]" name="init" is-config="true" duration-ms="54541" started-at="2020-01-13T21:17:27Z" finished-at="2020-01-13T21:18:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6f7923a5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="crearCasa(java.lang.String)[pri:0, instance:Test.Vencidos.Casas.valicarCreacionCasa@6fb554cc]" name="crearCasa" duration-ms="14308" started-at="2020-01-13T21:18:22Z" description="Verificación de creacion de casas" data-provider="Firefox" finished-at="2020-01-13T21:18:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crearCasa -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Test.Vencidos.Casas.valicarCreacionCasa@6fb554cc]" name="close" is-config="true" duration-ms="7143" started-at="2020-01-13T21:18:36Z" finished-at="2020-01-13T21:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Test.Vencidos.Casas.valicarCreacionCasa -->
+    </test> <!-- vencidos -->
+  </suite> <!-- run environment test -->
+</testng-results>
