@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="run environment test">
     <test name="vencidos">
-        <parameter name="browserName" value="Firefox"/>
+        <parameter name="browserName" value="Chrome"/>
         <classes>
             <class name="Test.Vencidos.Casas.valicarCreacionCasa"/>
         </classes>

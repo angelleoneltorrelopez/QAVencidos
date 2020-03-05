@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [run environment test]">
   <test name="vencidos(failed)">
-    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserName" value="Firefox"/>
     <classes>
       <class name="Test.Vencidos.Casas.valicarCreacionCasa">
         <methods>
           <include name="close"/>
-          <include name="crearCasa" invocation-numbers="0"/>
+          <include name="crearCasa"/>
           <include name="init"/>
         </methods>
       </class> <!-- Test.Vencidos.Casas.valicarCreacionCasa -->

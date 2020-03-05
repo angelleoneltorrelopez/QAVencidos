@@ -6,7 +6,7 @@ import procesos.vencidos.ProcesoVencidos;
 
 public class valicarCreacionCasa extends TestBase {
 
-    @Test(description = "Verificación de creacion de casas", dataProvider = "Firefox")
+    @Test(description = "Verificación de creacion de casas", dataProvider = "Chrome")
     public void crearCasa(String browserName){
         ProcesoVencidos procesoVencidos = new ProcesoVencidos(driver);
         procesoVencidos.inicioDeSesion();
